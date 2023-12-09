@@ -1,8 +1,16 @@
+import { Button } from "@mui/material";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/10HoEJRiaQR2AuIwwqRbE8vit3rGuepew/view?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -17,17 +25,30 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I am <span className="text-[#915eff]">Deepanshu</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces web applications.
-          </p>
+          <Button
+            onClick={handleDownloadResume}
+            sx={{
+              cursor: "pointer",
+              color: "white",
+              backgroundColor: "#6c42cd",
+              marginTop: "15px",
+              zIndex: 20,
+              borderRadius: "6px",
+              fontFamily: "Poppins",
+              textTransform: "none",
+              fontSize: "16px",
+              ":hover": { background: "#915eff" },
+            }}
+          >
+            Download Resume
+          </Button>
         </div>
       </div>
 
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-4 bottom-24 w-full flex justify-center items-center">
-        <a href="#about"> 
+        <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{

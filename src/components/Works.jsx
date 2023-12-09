@@ -6,6 +6,8 @@ import { SectionWrapper } from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { github } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectCard = ({
   name,
@@ -13,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  deployed_link,
   index,
 }) => {
   return (
@@ -25,7 +28,10 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="w-full"
+          onClick={() => window.open(deployed_link, "_blank")}
+        >
           <img
             src={image}
             alt={name}
@@ -33,15 +39,29 @@ const ProjectCard = ({
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              {/* <img
                 src={github}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
-              />
+              /> */}
+              <GitHubIcon />
             </div>
+            {deployed_link && (
+              <div
+                onClick={() => window.open(deployed_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                {/* <img
+                src={github}
+                alt="github"
+                className="w-1/2 h-1/2 object-contain"
+              /> */}
+                <OpenInNewIcon />
+              </div>
+            )}
           </div>
 
           <div className="mt-5">
@@ -68,24 +88,8 @@ const Works = () => {
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>PROJECTS</h2>
       </motion.div>
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          rem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lore
-        </motion.p>
-      </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}

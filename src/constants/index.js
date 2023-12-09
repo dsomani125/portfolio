@@ -1,28 +1,17 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  audiomaster,
+  aws,
+  bukuwarung,
+  leftout,
 } from "../assets";
 
 export const navLinks = [
@@ -37,25 +26,6 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -81,24 +51,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -109,144 +67,120 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "AWS",
+    icon: aws,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer II",
+    company_name: "BukuWarung",
+    icon: bukuwarung,
+    linkedin_url: "https://www.linkedin.com/company/bukuwarung/mycompany/",
+    iconBg: "#014ca3",
+    date: "Sep 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading the payments web vertical at BukuWarung.",
+      "Led the development of BukuWarung’s new product B2B payments.",
+      "Added industry standard security principles to our projects.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Software Engineer I",
+    company_name: "BukuWarung",
+    icon: bukuwarung,
+    linkedin_url: "https://www.linkedin.com/company/bukuwarung/mycompany/",
+    iconBg: "#014ca3",
+    date: "Oct 2022 - Sep 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed various reusable and configurable UI components in React.js and Next.js",
+      "Working on payments main features such as KYC, KYB",
+      "Implemented Universal Checkout for BukuWarung and integrated it with multiple payment gateways",
+      "Established AWS S3 integration within our front-end repository and configured GitHub actions for seamless synchronization with the associated bucket.",
+      "Enhanced webview performance by 20% with implementing best practices and optimizations.",
+      "Worked on the internal web app used by our on-ground team to manage KYC, KYB, and other details.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Software Engineer (Intern)",
+    company_name: "BukuWarung",
+    icon: bukuwarung,
+    linkedin_url: "https://www.linkedin.com/company/bukuwarung/mycompany/",
+    iconBg: "#014ca3",
+    date: "Jan 2022 - Sep 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Wrote a script in javascript to display the previous and changed value for remote config on Firebase.",
+      "Migrated the rewards and loyalty flow from Vue.js to React.js and added more features.",
+      "Developed the help section for BukuWarung app.",
     ],
-  }
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Audio Master",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A fully-fledged e-commerce platform to buy headphones, speakers and more.",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "React.js",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Sanity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: audiomaster,
+    source_code_link: "https://github.com/dsomani125/audio-master",
+    deployed_link: "https://audio-master-pi.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "LeftOut",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full-stack web app to let travellers connect and plan their next trip with fellow travellers",
     tags: [
       {
-        name: "react",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "React.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node.js",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "Styled Components",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ImageKit",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Netlify",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: leftout,
+    source_code_link: "https://github.com/leftout-social",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, projects };
