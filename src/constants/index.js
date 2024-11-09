@@ -12,6 +12,9 @@ import {
   aws,
   bukuwarung,
   leftout,
+  springboot,
+  postgresql,
+  java,
 } from "../assets";
 
 export const navLinks = [
@@ -31,12 +34,8 @@ export const navLinks = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Java",
+    icon: java,
   },
   {
     name: "JavaScript",
@@ -47,12 +46,28 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Postgres SQL",
+    icon: postgresql,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Spring Boot",
+    icon: springboot,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "Node JS",
@@ -82,8 +97,11 @@ const experiences = [
     date: "Sep 2023 - Present",
     points: [
       "Leading the payments web vertical at BukuWarung.",
-      "Led the development of BukuWarung’s new product B2B payments.",
-      "Added industry standard security principles to our projects.",
+      "Led the web development of BukuWarung’s new product B2B payments",
+      "Contributed in backend development for devices utilizing the ISO-8583 international standard to enable secure money transfers and balance inquiries for debit and credit cards (EDC machines).",
+      "Led and currently maintaining the entire order flow for purchasing EDC devices.",
+      "Responsible for developing and managing major payment flows, including wallet top-ups and peer-to-peer money transfers.",
+      "Served as primary on-call, resolving various issues and implementing monitoring for CPU and memory usage, as well as enhancing logging for critical incidents.",
     ],
   },
   {
@@ -94,12 +112,10 @@ const experiences = [
     iconBg: "#014ca3",
     date: "Oct 2022 - Sep 2023",
     points: [
-      "Developed various reusable and configurable UI components in React.js and Next.js",
-      "Working on payments main features such as KYC, KYB",
-      "Implemented Universal Checkout for BukuWarung and integrated it with multiple payment gateways",
+      "Worked on payments main features including Universal Checkout, KYC and KYB.",
       "Established AWS S3 integration within our front-end repository and configured GitHub actions for seamless synchronization with the associated bucket.",
+      "Developed various reusable and configurable UI components in React.js and Next.js",
       "Enhanced webview performance by 20% with implementing best practices and optimizations.",
-      "Worked on the internal web app used by our on-ground team to manage KYC, KYB, and other details.",
     ],
   },
   {

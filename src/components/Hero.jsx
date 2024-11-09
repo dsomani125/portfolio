@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const handleDownloadResume = () => {
     window.open(
-      "https://drive.google.com/file/d/10HoEJRiaQR2AuIwwqRbE8vit3rGuepew/view?usp=sharing",
-      "_blank"
+      "https://drive.google.com/file/d/1PDc0bkS5Y-ycSUEuog5-gYulyFav8xaU/view?usp=drive_link",
+      "_blank",
     );
   };
 
