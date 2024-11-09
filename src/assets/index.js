@@ -13,6 +13,9 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import aws from "./tech/aws.png";
+import java from "./tech/java.png";
+import springboot from "./tech/springboot.png";
+import postgresql from "./tech/postgresql.svg";
 
 import bukuwarung from "./company/bukuwarung.png";
 
@@ -37,4 +40,7 @@ export {
   aws,
   bukuwarung,
   leftout,
+  java,
+  springboot,
+  postgresql,
 };

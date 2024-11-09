@@ -49,7 +49,7 @@ const Contact = () => {
           to_email: "somanideepanshu12599@gmail.com",
           message: form.message,
         },
-        "iSg7PmxvXkCU-L339"
+        "iSg7PmxvXkCU-L339",
       )
       .then(
         () => {
@@ -64,7 +64,7 @@ const Contact = () => {
         (error) => {
           console.log(error);
           alert("Something went wrong");
-        }
+        },
       );
   };
 
