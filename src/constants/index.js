@@ -96,12 +96,13 @@ const experiences = [
     iconBg: "#014ca3",
     date: "Sep 2023 - Present",
     points: [
-      "Leading the payments web vertical at BukuWarung.",
-      "Led the web development of BukuWarung’s new product B2B payments",
-      "Contributed in backend development for devices utilizing the ISO-8583 international standard to enable secure money transfers and balance inquiries for debit and credit cards (EDC machines).",
-      "Led and currently maintaining the entire order flow for purchasing EDC devices.",
-      "Responsible for developing and managing major payment flows, including wallet top-ups and peer-to-peer money transfers.",
-      "Served as primary on-call, resolving various issues and implementing monitoring for CPU and memory usage, as well as enhancing logging for critical incidents.",
+      "Contributed in backend development for devices utilizing the ISO-8583 international standard to enable secure money transfers, balance inquiries and cash withdrawl for debit and credit cards (EDC machines)",
+      "Architecting and developing end-to-end features, ensuring scalability, performance optimization, and seamless integration across multiple services",
+      "Leading the entire order flow for purchasing POS machines.",
+      "Responsible for developing and managing major payment flows, including wallet top-ups, KYC, KYB and peer-to-peer money transfers.",
+      "Served as primary on-call, resolving various issues and implementing monitoring for CPU and memory usage, as well as enhancing logging for critical incidents",
+      "Led the payments web vertical at BukuWarung.",
+      "Led the web development of BukuWarung’s new product B2B payments."
     ],
   },
   {
@@ -112,10 +113,10 @@ const experiences = [
     iconBg: "#014ca3",
     date: "Oct 2022 - Sep 2023",
     points: [
-      "Worked on payments main features including Universal Checkout, KYC and KYB.",
+      "Worked on payments MWeb main features including Universal Checkout, KYC, and KYB.",
       "Established AWS S3 integration within our front-end repository and configured GitHub actions for seamless synchronization with the associated bucket.",
-      "Developed various reusable and configurable UI components in React.js and Next.js",
-      "Enhanced webview performance by 20% with implementing best practices and optimizations.",
+      "Developed end-to-end features with various reusable and configurable UI components in React.js and Next.js.",
+      "Enhanced webview performance by 20% by implementing best practices and optimizations.",
     ],
   },
   {

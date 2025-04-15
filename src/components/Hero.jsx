@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const handleDownloadResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1PDc0bkS5Y-ycSUEuog5-gYulyFav8xaU/view?usp=drive_link",
+      "https://drive.google.com/file/d/1vgdoTgcpyf3W0BSykNdUazgLdjyq2qNM/view?usp=drive_link",
       "_blank",
     );
   };
